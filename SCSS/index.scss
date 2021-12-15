@@ -1,0 +1,89 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    font-family: 'Roboto', sans-serif;
+}
+
+/*===NAV===*/
+
+.navbar{
+    grid-area: nav;
+    z-index: 1;
+    .nav img{
+        &:hover{
+            transform: scale(1.08);}
+        }
+    .nav-link{
+        &:hover{
+            text-decoration: underline;
+            transform: scale(1.05);}
+        }
+}    
+     
+/*=== ///   INDEX   /// ===*/
+
+/*===HEADER===*/
+
+header{
+    grid-area: header;
+    padding: 10% 0% 2% 0%;
+     img{
+        animation-name: expandir;
+        animation-duration: 7s;
+        }
+        @keyframes expandir{
+            0%{
+            transform: rotateY(300deg)}
+            100%{
+            transform: rotateY(360deg)}
+        }
+}
+main{
+    grid-area: main;
+    background: white;
+}
+.section-1{
+    grid-area: header;
+    div img{
+        margin: 0px 10px 50px 10px;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;}
+        @keyframes rotate{
+            100%{
+            transform:rotate(360deg)}
+        }
+}
+.section-2 img{
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+.section3-img{
+    margin: 0% 0 6% 0;
+    animation-name: rotate2;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+.img-confeti{
+    margin: -8% 0 0% 0%;
+    animation-name: rotate2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;}
+    @keyframes rotate2{
+        0%{
+            transform: scale(1);}
+        100%{
+            transform: scale(1.10);}     
+}
+.img-confeti1{
+    margin: -45% 0 0 0;
+}
+.section-3{
+    margin-top: 10%;}
+    .section-3 div{
+        margin-top: -2.5%;
+}

@@ -1,0 +1,109 @@
+/*=== ///   SERVICIOS   /// ===*/
+
+.header-servicios{
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;}
+    .header-servicios img{
+        margin-right: 5%;}
+    .header-servicios div{
+        background-color: white;
+        z-index: 0;
+        margin-right: -5.5%; margin-top: 1%;
+}
+.section1-servicios{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+.whatsapp-icon{
+    animation-name: animacion2;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    transition: all;
+}
+.whatsapp-icon:hover{
+    transform: scale(1.10);
+}
+@keyframes animacion2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.section1-servicios div{
+    background-color: white;
+    justify-content: space-between;
+    margin: 20px; padding: 1%;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+}
+@keyframes animacion {
+    0%{
+
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+.section2-servicios{
+    display: flex;
+    justify-content: space-around;
+    padding: 15% 0% 15%;
+}
+.section2-servicios div{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.1%;
+}
+.section2-servicios div p{
+    max-width: 600px;
+}
+.section2-servicios img{
+    animation-name: expandir1;
+    animation-duration: 3s;
+}
+.section3-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section4-servicios{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 4% 0% 3% 0%;
+}
+.section4-servicios div{
+    flex-direction: column;
+    text-align: center;
+    color: #0f0c29;
+    margin-top: 4.5%;
+}
+.section4-servicios form{
+    padding: 2%;
+}
+.section4-servicios form div{
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 1%;
+}
+.section4-servicios form input{
+    background: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}

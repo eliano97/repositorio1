@@ -1,0 +1,37 @@
+/*=== ///   FOOTER   /// ===*/
+
+.footer{
+    grid-area: footer;
+}
+
+.footer nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+    transition: all;
+}
+.footer nav ul li a:hover{
+    color: #FFE000;
+}
+.footer div img{
+    transition: all ;
+}
+.footer div img:hover{
+    transform: scale(1.08);
+}
+.footer nav div{
+    margin-left: 30px;
+}
+.footer-div2{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+.footer-whatsapp{
+    position:fixed;
+    width:80px;
+    height:70px;
+    bottom:40px;
+    right:40px;
+    }

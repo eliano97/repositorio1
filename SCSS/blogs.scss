@@ -1,0 +1,103 @@
+/*=== ///   BLOGS   /// ===*/
+
+.header-blogs{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header-blogs img{
+    box-shadow: #FFE000 0.1em 0.1em 0em 0.5em;
+    padding: 1%;
+    margin-left: 0%;
+}
+.header-blogs div{
+    text-align: left;
+    margin: 0%;
+}
+.header-blogs div h1{
+    font-size: 60px;
+}
+.header-blogs div P{
+    max-width: 500px;
+}
+.section-blogs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #0f0c29 0em 0em 0.5em 0.5em;
+    margin: 4%;
+}
+.section-blogs img{
+    width: 40%; height: auto;
+    margin: 4%;
+    box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
+}
+.section-blogs div{
+    flex-direction: column;
+    text-align: left;
+    color: #0f0c29;
+}
+.section-blogs div h2{
+    font-size: 60px;
+}
+.section-blogs div p{
+    font-size: 22px;
+    max-width: 550px;
+}
+.section1-blogs{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #0f0c29 0em 0em 0em 0.5em;
+    margin: 6% 0% 6% 0%;
+    background-color: #0f0c29;
+}
+.section1-blogs img{
+    width: 40%; height: auto;
+    margin: 4%;
+    box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
+}
+.section1-blogs div{
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+.section1-blogs div h2{
+    font-size: 60px;
+}
+.section1-blogs div p{
+    font-size: 22px;
+    max-width: 600px;
+}
+.section2-blogs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #0f0c29 0em 0em 0.5em 0.5em;
+    margin: 4%;
+}
+.section2-blogs img{
+    width: 40%; height: auto;
+    margin: 4%;
+    box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
+}
+.section2-blogs div{
+    flex-direction: column;
+    text-align: left;
+    color: #0f0c29;
+}
+.section2-blogs div h2{
+    font-size: 60px;
+}
+.section2-blogs div p{
+    font-size: 22px;
+    max-width: 550px;
+}
