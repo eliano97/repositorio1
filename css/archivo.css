@@ -1,6 +1,8 @@
 body {
   display: grid;
-  grid-template-areas: "nav nav nav" "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "nav nav nav"
+ "main main main"
+ "footer footer footer";
   font-family: 'Roboto', sans-serif; }
 
 /*===NAV===*/
@@ -14,11 +16,16 @@ body {
     transform: scale(1.05); }
 
 /*=== ///   INDEX   /// ===*/
-/*===HEADER===*/
-header {
-  grid-area: header;
+/*===MAIN===*/
+main {
+  grid-area: main;
+  background: white; }
+
+/*===SECTION ===*/
+section {
+  grid-area: main;
   padding: 10% 0% 2% 0%; }
-  header img {
+  section img {
     animation-name: expandir;
     animation-duration: 7s; }
 
@@ -28,12 +35,13 @@ header {
   100% {
     transform: rotateY(360deg); } }
 
-main {
-  grid-area: main;
-  background: white; }
+.section div h1{
+  font-size: 200px;
+}
 
+/*===SECTION-1 ===*/
 .section-1 {
-  grid-area: header; }
+  grid-area: main; }
   .section-1 div img {
     margin: 0px 10px 50px 10px;
     animation-name: rotate;
@@ -70,22 +78,112 @@ main {
   margin: -45% 0 0 0; }
 
 .section-3 {
+  grid-area: main;
   margin-top: 10%; }
 
 .section-3 div {
   margin-top: -2.5%; }
 
+/* ===> MEDIA QUERIE INDEX <=== */
+@media screen and (max-width: 1200px) {
+  .header img {
+    width: 40%;
+    height: auto; }
+  .section-2 div {
+    text-align: center; }
+  .img-confeti1 {
+    margin-top: -15%; } }
+
+@media screen and (max-width: 1024px) {
+  .section {
+    display: flex;
+    flex-direction: column; }
+  .section p {
+    font-size: 70px; }
+  .section h1 {
+    font-size: 50px; }
+  .card-img-top {
+    display: none; }
+  .header img {
+    width: 40%;
+    height: auto; }
+  .section-2 div {
+    text-align: center; }
+  .section-2 img {
+    width: 60%;
+    height: auto; }
+  .img-confeti1 {
+    margin-top: -20%; } }
+
+@media screen and (max-width: 871px) {
+  footer nav ul {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; }
+  header img {
+    margin-top: 5%; }
+  .section-2 img {
+    display: none; }
+  .card-img-top {
+    display: none; }
+  .section-3 div {
+    text-align: center; }
+  footer nav {
+    display: flex;
+    padding-bottom: 2%; }
+  footer nav ul {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .header img {
+    width: 50%;
+    margin: 2% 0% 0% 0%; }
+  .section-2 div {
+    margin: 3%; }
+  .section-2 div h2 {
+    font-size: 24px; }
+  .card-img-top {
+    display: none; }
+  .section-3 div {
+    text-align: center; }
+  .section-3 div p {
+    display: flex; } }
+
+@media screen and (max-width: 480px) {
+  .header img {
+    display: none; }
+  .section-1 h2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 18px;
+    max-width: 400px; }
+  .section-2 div h2 {
+    font-size: 20px; }
+  .section-2 div p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 320px) {
+  .header img {
+    display: none; }
+  .section-1 {
+    text-align: center; }
+  .section-1 h2 {
+    font-size: 13px;
+    max-width: 250px;
+    margin-bottom: 10%; } }
+
 /*=== ///   SERVICIOS   /// ===*/
-.header-servicios {
-  grid-area: header;
-  display: flex;
+.section-servicios {
+  grid-area: main;
   justify-content: space-evenly;
   padding-bottom: 5%; }
 
-.header-servicios img {
+.section-servicios img {
   margin-right: 5%; }
 
-.header-servicios div {
+.section-servicios div {
   background-color: white;
   z-index: 0;
   margin-right: -5.5%;
@@ -182,14 +280,6 @@ main {
   padding: 10px; }
 
 /*=== ///   PLANES   /// ===*/
-.header-planes {
-  grid-area: header;
-  flex-direction: column;
-  background-image: url(../imagenes/planes.png);
-  height: 400px;
-  width: auto;
-  background-size: cover; }
-
 .header-planes img {
   display: none;
   /*width: 50%; height: auto;
@@ -264,19 +354,17 @@ main {
   box-shadow: #0c0c0c 0.8em 1.0em 0.8em 0.1em; }
 
 /*=== ///   CONTACTO   /// ===*/
-.header-contacto {
+.section-contacto {
   grid-area: header;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   padding-bottom: 5%; }
-
-.header-contacto img {
-  width: 40%;
-  height: auto; }
-
-.header-contacto div h1 {
-  font-size: 50px; }
+  .section-contacto .header-contacto img {
+    width: 40%;
+    height: auto; }
+    .section-contacto .header-contacto img .section-contacto div h1 {
+      font-size: 50px; }
 
 .section-contacto {
   display: flex;
@@ -355,89 +443,6 @@ main {
   height: 70px;
   bottom: 40px;
   right: 40px; }
-
-/* ===> MEDIA QUERIE INDEX <=== */
-@media screen and (max-width: 1200px) {
-  .header img {
-    width: 40%;
-    height: auto; }
-  .section-2 div {
-    text-align: center; }
-  .img-confeti1 {
-    margin-top: -15%; } }
-
-@media screen and (max-width: 1024px) {
-  .card-img-top {
-    display: none; }
-  .header img {
-    width: 40%;
-    height: auto; }
-  .section-2 div {
-    text-align: center; }
-  .section-2 img {
-    width: 60%;
-    height: auto; }
-  .img-confeti1 {
-    margin-top: -20%; } }
-
-@media screen and (max-width: 871px) {
-  footer nav ul {
-    display: none; } }
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column; }
-  header img {
-    margin-top: 5%; }
-  .section-2 img {
-    display: none; }
-  .card-img-top {
-    display: none; }
-  .section-3 div {
-    text-align: center; }
-  footer nav {
-    display: flex;
-    padding-bottom: 2%; }
-  footer nav ul {
-    display: none; } }
-
-@media screen and (max-width: 600px) {
-  .header img {
-    width: 50%;
-    margin: 2% 0% 0% 0%; }
-  .section-2 div {
-    margin: 3%; }
-  .section-2 div h2 {
-    font-size: 24px; }
-  .card-img-top {
-    display: none; }
-  .section-3 div {
-    text-align: center; }
-  .section-3 div p {
-    display: flex; } }
-
-@media screen and (max-width: 480px) {
-  .header img {
-    display: none; }
-  .section-1 h2 {
-    text-align: center;
-    margin-top: 5%;
-    font-size: 18px;
-    max-width: 400px; }
-  .section-2 div h2 {
-    font-size: 20px; }
-  .section-2 div p {
-    font-size: 14px; } }
-
-@media screen and (max-width: 320px) {
-  .header img {
-    display: none; }
-  .section-1 {
-    text-align: center; }
-  .section-1 h2 {
-    font-size: 13px;
-    max-width: 250px;
-    margin-bottom: 10%; } }
 
 /* ===> MEDIA QUERIE SERVICIOS <=== */
 @media screen and (max-width: 1200px) {

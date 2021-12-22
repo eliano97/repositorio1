@@ -1,18 +1,19 @@
 /*=== ///   CONTACTO   /// ===*/
 
-.header-contacto{
+.section-contacto{
     grid-area: header;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     padding-bottom: 5%;
+    .header-contacto img{
+        width: 40%; height: auto;
+        .section-contacto div h1{
+        font-size: 50px;
+        }
+    }
 }
-.header-contacto img{
-    width: 40%; height: auto;
-}
-.header-contacto div h1{
-    font-size: 50px;
-}
+
 .section-contacto{
     display: flex;
     justify-content: center;
